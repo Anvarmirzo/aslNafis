@@ -27,8 +27,9 @@
     },
   },
 }); */
-/* Stuff Swiper */
-let stuffSwiper = new Swiper('.header .swiper-container', {
+
+/* Lagan Swiper */
+let laganSwiper = new Swiper('.header-content .swiper-container', {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
@@ -38,18 +39,40 @@ let stuffSwiper = new Swiper('.header .swiper-container', {
     disableOnInteraction: false,
   },
   navigation: {
-    nextEl: '.header .next',
-    prevEl: '.header .prev',
+    nextEl: '.header-content .next',
+    prevEl: '.header-content .prev',
   },
-  /*  breakpoints: {
-    320: {},
+});
+
+/* Complect Swiper */
+let complectSwiper = new Swiper('.swiper-container.complect', {
+  spaceBetween: 28,
+  loop: true,
+  centerMode: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.15,
+    },
     576: {
-      slidesPerView: 2,
+      slidesPerView: 1.15,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2.15,
     },
-  }, */
+    991: {
+      slidesPerView: 2.15,
+    },
+    1200: {
+      slidesPerView: 3.15,
+    },
+    1400: {
+      slidesPerView: 4,
+    },
+  },
 });
 /* Certificates Swiper */
 /* let certificatesSwiper = new Swiper('.certificates .swiper-container', {

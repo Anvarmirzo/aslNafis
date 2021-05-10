@@ -1,7 +1,53 @@
-.header {
+.header-content {
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @include block_767 {
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+
   .slider-controls {
     display: flex;
     align-items: center;
+
+    @include block_991 {
+      width: 100%;
+      position: absolute;
+      top: -120%;
+      left: 0;
+      justify-content: space-between;
+      z-index: 1;
+    }
+
+    @include block_767 {
+      top: -95%;
+    }
+
+    @include block_575 {
+      top: -116%;
+    }
+
+    @include block_480 {
+      top: -90%;
+    }
+
+    @include custom-media(400px) {
+      top: -75%;
+    }
+
+    @include custom-media(340px) {
+      top: -70%;
+    }
+
+    @include custom-media(320px) {
+      top: -60%;
+    }
 
     button {
       display: flex;
@@ -23,5 +69,11 @@
         border-radius: 5px;
       }
     }
+  }
+}
+
+.swiper-container.complect {
+  .swiper-slide {
+    height: auto;
   }
 }

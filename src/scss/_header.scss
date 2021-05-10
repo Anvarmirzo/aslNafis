@@ -8,6 +8,10 @@
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 40px;
+
+    @include block_767 {
+      padding: 0 0 24px;
+    }
   }
 
   &-content {
@@ -15,11 +19,49 @@
     padding: 42px 114px 37px;
     margin-bottom: 24px;
 
+    @include custom-media(1332px) {
+      padding: 37px;
+    }
+
+    @include block_575 {
+      padding: 15px;
+    }
+
+    h2 {
+      @include custom-media(1505px) {
+        font-size: 39px;
+      }
+
+      @include custom-media(1159px) {
+        font-size: 31px;
+      }
+
+      @include block_991 {
+        margin-bottom: 35px;
+      }
+
+      @include block_575 {
+        font-size: 24px;
+      }
+    }
+
+    &--margin {
+      margin-top: -18%;
+
+      @include block_991 {
+        margin-top: 30px;
+      }
+    }
+
     p {
       font-size: 18px;
       line-height: 1.22;
       color: #1864AB;
       margin-bottom: 20px;
+
+      @include block_575 {
+        font-size: 14px;
+      }
     }
 
     a {
@@ -35,6 +77,16 @@
       border-radius: 5px;
       padding: 16px 39px;
       margin-bottom: 26px;
+
+      @include block_575 {
+        font-size: 14px;
+        padding: 13px 37px;
+      }
+
+      &:hover {
+        color: #fff;
+        background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+      }
     }
   }
 
@@ -42,12 +94,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 39px 30px;
+    padding: 40px 30px;
     background-image: url(../img/products/titan.png);
-    background-color: #fff;
+    background-color: #f6f6f6;
     background-repeat: no-repeat;
     background-position: right bottom;
     height: 100%;
+    box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.1);
 
     &.second {
       background-image: url(../img/products/gold.png);
@@ -63,10 +116,10 @@
 
     h3 {
       margin-bottom: 56px;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 1.21;
-      color: #000000;
+
+      @include block_575 {
+        margin-bottom: 30px;
+      }
     }
 
     a {
@@ -77,6 +130,16 @@
       border: 4px solid #4DA9F5;
       padding: 9px 30px;
       border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.9);
+
+      &:hover {
+        color: #fff;
+        background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+      }
+
+      @include block_575 {
+        font-size: 12px;
+      }
     }
   }
 }

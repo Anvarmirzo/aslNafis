@@ -3,6 +3,11 @@
   padding-top: 75px;
   padding-bottom: 75px;
 
+  @include block_575 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
