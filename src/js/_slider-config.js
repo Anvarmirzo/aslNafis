@@ -74,6 +74,36 @@ let complectSwiper = new Swiper('.swiper-container.complect', {
     },
   },
 });
+/* Set Swiper */
+let setSwiper = new Swiper('.set .swiper-container', {
+  spaceBetween: 30,
+  loop: true,
+  centerMode: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.15,
+    },
+    576: {
+      slidesPerView: 1.15,
+    },
+    768: {
+      slidesPerView: 2.15,
+    },
+    991: {
+      slidesPerView: 2.15,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+    1400: {
+      slidesPerView: 3,
+    },
+  },
+});
 /* Certificates Swiper */
 /* let certificatesSwiper = new Swiper('.certificates .swiper-container', {
   spaceBetween: 10,
