@@ -47,6 +47,11 @@
     color: #000000;
     padding: 16px 39px;
 
+    &:hover {
+      color: #fff;
+      background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+    }
+
     @include block_575 {
       font-size: 14px;
       margin-top: 30px;

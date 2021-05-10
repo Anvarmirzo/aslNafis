@@ -1241,6 +1241,12 @@ h4 {
   padding: 16px 39px;
 }
 
+.popular .to-catalog:hover {
+  color: #fff;
+  background-image: -o-linear-gradient(315deg, #74C0FC 0%, #339AF0 100%);
+  background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
