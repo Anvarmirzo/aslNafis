@@ -45,14 +45,21 @@ img {
     max-width: 100%;
 }
 
+main {
+    background-image: url(../img/bg/waves-bg.jpg);
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover;
+}
+
 section {
     padding-top: 80px;
-    padding-bottom: 80px;
+    // padding-bottom: 80px;
     overflow: hidden;
 
     @include block_767 {
         padding-top: 50px;
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
     }
 }
 

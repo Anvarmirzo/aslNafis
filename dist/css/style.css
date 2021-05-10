@@ -689,9 +689,15 @@ img {
   max-width: 100%;
 }
 
+main {
+  background-image: url(../img/bg/waves-bg.jpg);
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover;
+}
+
 section {
   padding-top: 80px;
-  padding-bottom: 80px;
   overflow: hidden;
 }
 
@@ -1078,6 +1084,13 @@ h3 {
   color: #000000;
 }
 
+h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #556270;
+}
+
 .header-content .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1178,6 +1191,54 @@ h3 {
   color: #fff;
   background-image: -o-linear-gradient(315deg, #74C0FC 0%, #339AF0 100%);
   background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+}
+
+.popular {
+  padding-bottom: 80px;
+}
+
+.popular-card {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.popular-card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 291px;
+  background-image: -o-linear-gradient(310.51deg, #F6F6F6 0%, #FFFFFF 100%);
+  background-image: linear-gradient(139.49deg, #F6F6F6 0%, #FFFFFF 100%);
+  -webkit-box-shadow: 4px 4px 10px -5px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 4px 10px -5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+.popular-card-img img {
+  max-width: 190px;
+  max-height: 190px;
+}
+
+.popular .to-catalog {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 55px auto 0;
+  border: 2px solid #4DA9F5;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  padding: 16px 39px;
 }
 
 @media (min-width: 576px) {
@@ -1811,7 +1872,6 @@ h3 {
 @media (max-width: 767.98px) {
   section {
     padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   .me-57 {
@@ -1933,8 +1993,16 @@ h3 {
     font-size: 18px;
   }
 
+  h4 {
+    font-size: 12px;
+  }
+
   .header-content .slider-controls {
     top: -116%;
+  }
+
+  .set-card {
+    min-height: 260px;
   }
 
   .set-card h3 {
@@ -1945,11 +2013,29 @@ h3 {
   .set-card a {
     font-size: 12px;
   }
+
+  .popular {
+    padding-bottom: 30px;
+  }
+
+  .popular .to-catalog {
+    font-size: 14px;
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 480.98px) {
   .header-content .slider-controls {
     top: -90%;
+  }
+
+  .popular-card-img {
+    min-height: 148px;
+  }
+
+  .popular-card-img img {
+    max-width: 97px;
+    max-height: 97px;
   }
 }
 

@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
     background-position: center bottom;
 
+    @include block_575 {
+      min-height: 260px;
+    }
+
     @include custom-media(400px) {
       background-size: 100%;
     }
