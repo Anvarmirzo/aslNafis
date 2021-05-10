@@ -1,0 +1,30 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.logo {
+  background-image: url(../img/svg/logo.svg);
+  width: 46px;
+  height: 36px;
+}
+
+.burger {
+  background-image: url(../img/svg/burger.svg);
+  width: 12px;
+  height: 10px;
+}
+
+.arrow-left {
+  background-image: url(../img/svg/arrow-left.svg);
+  width: 6px;
+  height: 12px;
+}
+
+.arrow-right {
+  background-image: url(../img/svg/arrow-left.svg);
+  transform: rotate(180deg);
+  width: 6px;
+  height: 12px;
+}
