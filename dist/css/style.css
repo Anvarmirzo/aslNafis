@@ -2380,14 +2380,51 @@ h4 {
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
+    z-index: 3;
+  }
+
+  .main-nav-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .main-nav-links li {
+    margin-right: 0;
+    margin-bottom: 20%;
   }
 
   .main-nav .links-container {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .main-nav .links-container.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .nav-toggle {
     display: initial;
+    z-index: 3;
   }
 
   .header__container {

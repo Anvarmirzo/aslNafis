@@ -12,6 +12,11 @@ $(document).ready(function () {
   }
 
   ;
+  var nav = document.querySelector('.links-container');
+  var burger = document.querySelector('.nav-toggle');
+  burger.addEventListener('click', function (e) {
+    nav.classList.toggle('active');
+  });
   ;
   /* Partner Swiper */
 
@@ -178,5 +183,6 @@ $(document).ready(function () {
       }
     }
   });
+  ;
   ;
 });
