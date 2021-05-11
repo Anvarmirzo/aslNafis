@@ -28,3 +28,40 @@
   width: 6px;
   height: 12px;
 }
+
+.whiteness {
+  background-image: url(../img/svg/whiteness.svg);
+  width: 80px;
+  height: 80px;
+}
+
+.stable {
+  background-image: url(../img/svg/stable.svg);
+  width: 80px;
+  height: 80px;
+}
+
+.time {
+  background-image: url(../img/svg/deadline.svg);
+  width: 80px;
+  height: 80px;
+}
+
+.feedback {
+  background-image: url(../img/svg/clients.svg);
+  width: 80px;
+  height: 80px;
+}
+
+.why-arrow-left {
+  background-image: url(../img/svg/why-arrow-left.svg);
+  width: 25px;
+  height: 33px;
+}
+
+.why-arrow-right {
+  background-image: url(../img/svg/why-arrow-left.svg);
+  transform: rotate(180deg);
+  width:33px;
+  height: 33px;
+}

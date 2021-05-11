@@ -83,3 +83,35 @@
     height: auto;
   }
 }
+
+.why {
+  .swiper-container {
+    position: relative;
+  }
+
+  .slider-navigation {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    button {
+      width: 25px;
+      height: 33px;
+      border-width: 0;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+
+      &.why-arrow-right {
+        margin-top: -14px;
+      }
+    }
+  }
+}

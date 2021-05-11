@@ -104,18 +104,15 @@ let setSwiper = new Swiper('.set .swiper-container', {
     },
   },
 });
-/* Certificates Swiper */
-/* let certificatesSwiper = new Swiper('.certificates .swiper-container', {
+
+/* Why Swiper */
+let whySwiper = new Swiper('.why .swiper-container', {
   spaceBetween: 10,
-  loop: false,
+  loop: true,
   centerMode: true,
   navigation: {
-    nextEl: '.certificates .swiper-button-next',
-    prevEl: '.certificates .swiper-button-prev',
-  },
-  pagination: {
-    el: '.certificates .swiper-pagination',
-    type: 'bullets',
+    nextEl: '.why .why-arrow-left',
+    prevEl: '.why .why-arrow-right',
   },
   breakpoints: {
     320: {
@@ -125,16 +122,16 @@ let setSwiper = new Swiper('.set .swiper-container', {
       slidesPerView: 1,
     },
     768: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     991: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     1200: {
       slidesPerView: 3,
     },
   },
-}); */
+});
 /* Certificates Swiper */
 /* let feedbackSwiper = new Swiper('.feedback .swiper-container', {
   spaceBetween: 10,
