@@ -3,7 +3,6 @@
 $(document).ready(function () {
   // 'use strict';
   ;
-  ;
   /* Partner Swiper */
 
   /* let partnerSwiper = new Swiper('.partners-slider .swiper-container', {
@@ -141,65 +140,42 @@ $(document).ready(function () {
       }
     }
   });
-  /* Certificates Swiper */
+  /* Partners Swiper */
 
-  /* let feedbackSwiper = new Swiper('.feedback .swiper-container', {
-    spaceBetween: 10,
-    loop: false,
-    centerMode: true,
-    navigation: {
-      nextEl: '.feedback .swiper-button-next',
-      prevEl: '.feedback .swiper-button-prev',
-    },
-    pagination: {
-      el: '.feedback .swiper-pagination',
-      type: 'bullets',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 1,
-      },
-      991: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
-    },
-  }); */
-
-  /* Partners Second Swiper */
-
-  /* let partnersSecondSwiper = new Swiper('.partners-second .swiper-container', {
+  var partnerSwiper = new Swiper('.partners .swiper-container', {
     spaceBetween: 10,
     loop: true,
+    centerMode: true,
     autoplay: {
       delay: 2000,
-      disableOnInteraction: false,
-    },
-    centerMode: true,
-    navigation: {
-      nextEl: '.partners-second .swiper-button-next',
-      prevEl: '.partners-second .swiper-button-prev',
+      disableOnInteraction: false
     },
     breakpoints: {
       320: {
-        slidesPerView: 3,
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
       },
       991: {
-        slidesPerView: 4,
+        slidesPerView: 3
       },
       1200: {
-        slidesPerView: 4,
-      },
-    },
-  }); */
+        slidesPerView: 4
+      }
+    }
+  });
+  ;
+  var preloader = document.querySelector('.preloader');
+
+  if (preloader) {
+    window.addEventListener('load', function () {
+      preloader.classList.add('hide-preloader');
+    });
+  }
 
   ;
 });

@@ -1,0 +1,32 @@
+.partners {
+  .swiper-container {
+    padding-bottom: 60px;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    padding: 25px;
+    background-image: linear-gradient(139.49deg, #F6F6F6 0%, #FFFFFF 100%);
+    box-shadow: 4px 4px 10px -5px rgba(0, 0, 0, 0.15)
+  }
+
+  .ngnk {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.23;
+    color: #EB5757;
+    text-transform: uppercase;
+  }
+
+  .angrenkalin {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.23;
+    color: #2F80ED;
+    text-transform: uppercase;
+  }
+}

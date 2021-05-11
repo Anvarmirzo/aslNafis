@@ -132,18 +132,14 @@ let whySwiper = new Swiper('.why .swiper-container', {
     },
   },
 });
-/* Certificates Swiper */
-/* let feedbackSwiper = new Swiper('.feedback .swiper-container', {
+/* Partners Swiper */
+let partnerSwiper = new Swiper('.partners .swiper-container', {
   spaceBetween: 10,
-  loop: false,
+  loop: true,
   centerMode: true,
-  navigation: {
-    nextEl: '.feedback .swiper-button-next',
-    prevEl: '.feedback .swiper-button-prev',
-  },
-  pagination: {
-    el: '.feedback .swiper-pagination',
-    type: 'bullets',
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
   },
   breakpoints: {
     320: {
@@ -153,38 +149,13 @@ let whySwiper = new Swiper('.why .swiper-container', {
       slidesPerView: 1,
     },
     768: {
-      slidesPerView: 1,
-    },
-    991: {
       slidesPerView: 2,
     },
-    1200: {
-      slidesPerView: 3,
-    },
-  },
-}); */
-/* Partners Second Swiper */
-/* let partnersSecondSwiper = new Swiper('.partners-second .swiper-container', {
-  spaceBetween: 10,
-  loop: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-  centerMode: true,
-  navigation: {
-    nextEl: '.partners-second .swiper-button-next',
-    prevEl: '.partners-second .swiper-button-prev',
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 3,
-    },
     991: {
-      slidesPerView: 4,
+      slidesPerView: 3,
     },
     1200: {
       slidesPerView: 4,
     },
   },
-}); */
+});
