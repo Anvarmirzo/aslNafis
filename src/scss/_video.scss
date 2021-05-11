@@ -1,6 +1,7 @@
 .video {
   height: 100vh;
   position: relative;
+  padding: 0;
 
   &-container {
     position: absolute;
@@ -12,9 +13,23 @@
     z-index: -2;
   }
 
+  &--flex {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: start;
+    justify-content: space-between;
+    height: 100%;
+  }
+
   h2 {
     background-image: none;
     color: #FFFFFF;
+    margin-top: 80px;
+
+    @include block_575 {
+      margin-top: 30px;
+    }
   }
 
   a {
@@ -25,5 +40,20 @@
     border: 2px solid #4DA9F5;
     border-radius: 5px;
     padding: 16px 69px;
+    margin-bottom: 80px;
+
+    @include block_575 {
+      margin-bottom: 30px;
+    }
+
+    &:hover {
+      color: #fff;
+      background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+    }
+
+  }
+
+  img {
+    object-fit: cover;
   }
 }

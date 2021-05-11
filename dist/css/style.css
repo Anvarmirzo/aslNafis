@@ -938,6 +938,12 @@ section {
   height: 33px;
 }
 
+.phone {
+  background-image: url(../img/svg/phone.svg);
+  width: 27px;
+  height: 34px;
+}
+
 .main-nav {
   background-color: #fff;
   padding-top: 75px;
@@ -1449,6 +1455,7 @@ h4 {
 .video {
   height: 100vh;
   position: relative;
+  padding: 0;
 }
 
 .video-container {
@@ -1462,9 +1469,28 @@ h4 {
   z-index: -2;
 }
 
+.video--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .video h2 {
   background-image: none;
   color: #FFFFFF;
+  margin-top: 80px;
 }
 
 .video a {
@@ -1475,6 +1501,18 @@ h4 {
   border: 2px solid #4DA9F5;
   border-radius: 5px;
   padding: 16px 69px;
+  margin-bottom: 80px;
+}
+
+.video a:hover {
+  color: #fff;
+  background-image: -o-linear-gradient(315deg, #74C0FC 0%, #339AF0 100%);
+  background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+}
+
+.video img {
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .partners .swiper-container {
@@ -1514,6 +1552,53 @@ h4 {
   line-height: 1.23;
   color: #2F80ED;
   text-transform: uppercase;
+}
+
+.footer {
+  padding-top: 44px;
+  padding-bottom: 141px;
+  background-color: #E7F5FF;
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-logo a {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.25;
+  color: #556270;
+  text-transform: uppercase;
+}
+
+.footer-logo a .logo {
+  margin-right: 12px;
+}
+
+.footer-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #000000;
+}
+
+.footer-phone .phone {
+  margin-right: 15px;
 }
 
 @media (min-width: 576px) {
@@ -2338,6 +2423,14 @@ h4 {
     height: 33px;
     background-position: center center;
     background-size: cover;
+  }
+
+  .video h2 {
+    margin-top: 30px;
+  }
+
+  .video a {
+    margin-bottom: 30px;
   }
 }
 

@@ -1,0 +1,38 @@
+.footer {
+  padding-top: 44px;
+  padding-bottom: 141px;
+  background-color: #E7F5FF;
+
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    a {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 1.25;
+      color: #556270;
+      text-transform: uppercase;
+
+      .logo {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &-phone {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #000000;
+
+    .phone {
+      margin-right: 15px;
+    }
+  }
+}

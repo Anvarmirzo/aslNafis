@@ -1,7 +1,17 @@
 "use strict";
 
 $(document).ready(function () {
-  // 'use strict';
+  'use strict';
+
+  var preloader = document.querySelector('.preloader');
+
+  if (preloader) {
+    window.addEventListener('load', function () {
+      preloader.classList.add('hide-preloader');
+    });
+  }
+
+  ;
   ;
   /* Partner Swiper */
 
@@ -168,14 +178,5 @@ $(document).ready(function () {
       }
     }
   });
-  ;
-  var preloader = document.querySelector('.preloader');
-
-  if (preloader) {
-    window.addEventListener('load', function () {
-      preloader.classList.add('hide-preloader');
-    });
-  }
-
   ;
 });

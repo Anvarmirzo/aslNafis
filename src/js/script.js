@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  // 'use strict';
+  'use strict';
+  @@include('_preloader.js');
   @@include('check-webp.js');
   @@include('_slider-config.js');
-  @@include('_preloader.js');
 });
