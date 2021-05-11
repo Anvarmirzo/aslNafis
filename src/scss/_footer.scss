@@ -3,13 +3,18 @@
   padding-bottom: 141px;
   background-color: #E7F5FF;
 
-  &-top {
+  &__container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+
+    @include block_991 {
+      flex-direction: column;
+    }
   }
 
   &-logo {
+    margin-bottom: 30px;
+
     a {
       font-weight: 900;
       font-size: 36px;
@@ -30,9 +35,78 @@
     font-size: 18px;
     line-height: 1.22;
     color: #000000;
+    margin-bottom: 38px;
+
+    @include block_575 {
+      font-size: 14px;
+    }
 
     .phone {
       margin-right: 15px;
     }
   }
+
+  &-start {
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      @include block_991 {
+        width: 100%;
+      }
+
+      li {
+        margin-right: 41px;
+
+        @include block_1199 {
+          margin-right: 20px;
+        }
+
+        @include block_991 {
+          width: 50%;
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      a {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.22;
+        color: #556270;
+
+        @include block_575 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &-end {
+    @include block_991 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+  }
+
+  .instagram {
+    margin-right: 26px;
+
+    @include block_991 {
+      margin-right: 0;
+    }
+  }
+
+  @include block_991 {
+    span {
+      margin-right: 20px !important;
+    }
+  }
+
 }

@@ -941,7 +941,22 @@ section {
 .phone {
   background-image: url(../img/svg/phone.svg);
   width: 27px;
+  background-size: cover;
   height: 34px;
+}
+
+.facebook {
+  background-image: url(../img/svg/facebook.svg);
+  width: 24px;
+  background-size: cover;
+  height: 24px;
+}
+
+.instagram {
+  background-image: url(../img/svg/instagram.svg);
+  width: 24px;
+  background-size: cover;
+  height: 24px;
 }
 
 .main-nav {
@@ -1560,16 +1575,17 @@ h4 {
   background-color: #E7F5FF;
 }
 
-.footer-top {
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
 }
 
 .footer-logo a {
@@ -1595,10 +1611,41 @@ h4 {
   font-size: 18px;
   line-height: 1.22;
   color: #000000;
+  margin-bottom: 38px;
 }
 
 .footer-phone .phone {
   margin-right: 15px;
+}
+
+.footer-start ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer-start ul li {
+  margin-right: 41px;
+}
+
+.footer-start ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-start ul a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #556270;
+}
+
+.footer .instagram {
+  margin-right: 26px;
 }
 
 @media (min-width: 576px) {
@@ -2168,6 +2215,10 @@ h4 {
   .me-57 {
     margin-right: 35px;
   }
+
+  .footer-start ul li {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 1159px) {
@@ -2230,6 +2281,44 @@ h4 {
 
   .table-nav a {
     font-size: 17px;
+  }
+
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer-start ul {
+    width: 100%;
+  }
+
+  .footer-start ul li {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .footer-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .footer .instagram {
+    margin-right: 0;
+  }
+
+  .footer span {
+    margin-right: 20px !important;
   }
 }
 
@@ -2431,6 +2520,14 @@ h4 {
 
   .video a {
     margin-bottom: 30px;
+  }
+
+  .footer-phone {
+    font-size: 14px;
+  }
+
+  .footer-start ul a {
+    font-size: 14px;
   }
 }
 
