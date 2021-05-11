@@ -1247,6 +1247,55 @@ h4 {
   background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
 }
 
+.table-nav {
+  background-image: url(../img/bg/registan-bg.jpg);
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.table-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.table-nav li {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.33333%;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+.table-nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100px;
+  height: 100%;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.21;
+  color: #000000;
+  background-color: #A5D8FF;
+  -webkit-box-shadow: 4px 4px 10px 7px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 4px 10px 7px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  text-align: center;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -1873,6 +1922,10 @@ h4 {
     max-width: 100%;
     font-size: 23px;
   }
+
+  .table-nav a {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2027,6 +2080,28 @@ h4 {
   .popular .to-catalog {
     font-size: 14px;
     margin-top: 30px;
+  }
+
+  .table-nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .table-nav li {
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+  }
+
+  .table-nav li:last-child {
+    margin-bottom: 0;
+  }
+
+  .table-nav a {
+    font-size: 14px;
+    min-height: 55px;
   }
 }
 

@@ -1,0 +1,61 @@
+.table-nav {
+  background-image: url(../img/bg/registan-bg.jpg);
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include block_575 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+
+
+    @include block_575 {
+      width: 100%;
+      max-width: 100%;
+      flex: 1 1 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    height: 100%;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.21;
+    color: #000000;
+    background-color: #A5D8FF;
+    box-shadow: 4px 4px 10px 7px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    text-align: center;
+
+    @include block_991 {
+      font-size: 17px;
+    }
+
+    @include block_575 {
+      font-size: 14px;
+      min-height: 55px;
+    }
+  }
+}
