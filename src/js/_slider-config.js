@@ -159,3 +159,71 @@ let partnerSwiper = new Swiper('.partners .swiper-container', {
     },
   },
 });
+
+/* Our Team Swiper */
+let ourTeamSwiper = new Swiper('.our_team .swiper-container', {
+  spaceBetween: 40,
+  loop: true,
+  centerMode: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+/* Certificates Swiper */
+let certificatesSwiper = new Swiper('.certificates .swiper-container', {
+  spaceBetween: 30,
+  loop: true,
+  centerMode: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+$('.certificates .prev').click(() => {
+  certificatesSwiper.slidePrev();
+});
+
+$('.certificates .next').click(() => {
+  certificatesSwiper.slideNext();
+});

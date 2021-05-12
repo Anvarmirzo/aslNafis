@@ -1,0 +1,185 @@
+.catalog {
+    background-color: #fff;
+
+    padding-bottom: 80px;
+
+    @include sm-block {
+        padding-bottom: 60px;
+    }
+
+    .title {
+        font-size: 48px;
+        margin-bottom: 40px;
+
+        @include xs-block {
+            font-size: 32px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        @include xs-block {
+            font-size: 28px;
+        }
+    }
+
+    .controller {
+        display: flex;
+
+        &.open {
+            height: calc(5 * 60px + 4 * 15px);
+    
+            button.second {
+                transform: translateY(calc(100% + 15px));
+            }
+    
+            button.third {
+                transform: translateY(calc(200% + 30px));
+            }
+    
+            button.fourth {
+                transform: translateY(calc(300% + 45px));
+            }
+    
+            button.fifth {
+                transform: translateY(calc(400% + 60px));
+            }
+    
+            button.active::before {
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+
+        @include sm-block {
+            flex-wrap: wrap;
+            justify-content: center;
+            display: block;
+            position: relative;
+            height: 60px;
+            margin-bottom: 50px;
+            transition: all .3s ease;
+        }
+
+        button {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid transparent;
+            border-radius: 3px;
+            outline: none;
+            padding: 0;
+            font-size: 20px;
+
+            &:not(:last-of-type) {
+                margin-right: 15px;
+
+                @include sm-block {
+                    margin-right: 0;
+                }
+            }
+
+            @include sm-block {
+                display: block;
+                width: 100%;
+                border-radius: 5px;
+                text-align: center;
+                z-index: 10;
+                height: 60px;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+
+                position: absolute;
+                top: 0;
+                box-shadow: none;
+                font-size: 20px;
+
+                border: 3px solid #4DA9F5;
+                transition: all .3s ease;
+
+            }
+
+            &.first {
+                z-index: 20;
+                &::before {
+                    @include sm-block {
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border: 7px solid #4DA9F5;
+                        top: 50%;
+                        right: 15px;
+                        position: absolute;
+                        transition: all .3s ease;
+                        transform: translateY(-50%);
+
+                        border-bottom-width: 0;
+                        border-right-color: transparent;
+                        border-left-color: transparent;
+                    }
+                }
+            }
+
+            &.active {
+                border-color: #74C0FC;
+
+                @include sm-block {
+                    background: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+                    color: #fff;
+                    border: none;
+
+                    &::before {
+                        border-top-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .tabs {
+        .tab {
+            display: none;
+            padding-top: 30px;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+    .item {
+        @include col();
+        @include size(6);
+        @include size-md(8);
+        @include size-sm(12);
+        margin-bottom: 30px;
+
+        .img {
+            background: linear-gradient(139.49deg, #F6F6F6 0%, #FFFFFF 100%);
+            box-shadow: 4px 4px 10px -5px rgba(0, 0, 0, 0.15);
+            height: 290px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+
+            @include xs-block {
+                height: 150px;
+            }
+
+            img {
+                width: 80%;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+
+            @include xs-block {
+                font-size: 12px;
+            }
+        }
+    }
+}

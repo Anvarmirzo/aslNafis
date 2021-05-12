@@ -2,6 +2,7 @@
 @import url(../fonts/stylesheet.css);
 @import 'normalize';
 @import 'mixins';
+@import 'smart-grid';
 @import 'custom-grid';
 @import 'base';
 @import 'icons';
@@ -18,3 +19,7 @@
 @import 'footer';
 @import 'contact-page-info';
 @import 'contact-page-request';
+@import 'about_company-page';
+@import 'catalog';
+@import 'history-page';
+@import 'production';
