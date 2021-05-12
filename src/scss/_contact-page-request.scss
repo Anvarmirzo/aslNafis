@@ -13,9 +13,15 @@
     }
   }
 
-  @include block_1199 {
-    .col-md-6 {
+  .col-md-6 {
+    @include block_1199 {
       margin-bottom: 19px;
+
+      &:last-child {
+        @include block_767 {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 

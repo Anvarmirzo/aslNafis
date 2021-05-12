@@ -3,6 +3,11 @@
   padding-bottom: 141px;
   background-color: #E7F5FF;
 
+  @include block_991 {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;

@@ -6,4 +6,5 @@ $(document).ready(function () {
   @@include('_production_page.js');
   @@include('_fullpage_config.js');
   @@include('_catalog-page.js');
+  @@include('_map.js');
 });
