@@ -959,6 +959,30 @@ section {
   height: 24px;
 }
 
+.email {
+  background-image: url(../img/svg/email.svg);
+  width: 50px;
+  height: 50px;
+}
+
+.location {
+  background-image: url(../img/svg/location.svg);
+  width: 50px;
+  height: 50px;
+}
+
+.phone-white {
+  background-image: url(../img/svg/phone--white.svg);
+  width: 50px;
+  height: 50px;
+}
+
+.telegram {
+  background-image: url(../img/svg/telegram.svg);
+  width: 50px;
+  height: 50px;
+}
+
 .main-nav {
   background-color: #fff;
   padding-top: 75px;
@@ -1495,7 +1519,7 @@ h4 {
   position: relative;
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1646,6 +1670,119 @@ h4 {
 
 .footer .instagram {
   margin-right: 26px;
+}
+
+.contact-page-nav {
+  background-color: rgba(68, 68, 68, 0.05);
+}
+
+.contact-page-info {
+  padding-bottom: 40px;
+  margin-bottom: -40px;
+}
+
+.contact-page-info .info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.contact-page-info .info__item p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.21;
+  color: #000000;
+  margin-bottom: 3px;
+}
+
+.contact-page-info .info__item a {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.21;
+  color: #556270;
+}
+
+.contact-page-info .info__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 25px;
+  width: 60px;
+  height: 60px;
+  background-image: -o-linear-gradient(315deg, #74C0FC 0%, #339AF0 100%);
+  background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+  -webkit-box-shadow: 0px 4px 15px -5px #4DA9F5;
+  box-shadow: 0px 4px 15px -5px #4DA9F5;
+  border-radius: 50%;
+}
+
+.contact-page-info .info__circle .icon {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+.mw-167 {
+  max-width: 167px;
+}
+
+.contact-page-request .request-content {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  background-image: url(../img/bg/registan-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.contact-page-request .request__item {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 100%;
+}
+
+.contact-page-request .request__item h3 {
+  margin-bottom: 27px;
+}
+
+.contact-page-request .request__item a {
+  padding: 8px 29px;
+  border: 2px solid #4da9f5;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+}
+
+.contact-page-request .request__item a:hover {
+  color: #fff;
+  background-image: -o-linear-gradient(315deg, #74C0FC 0%, #339AF0 100%);
+  background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
 }
 
 @media (min-width: 576px) {
@@ -2201,6 +2338,12 @@ h4 {
   }
 }
 
+@media (max-width: 1439px) {
+  .contact-page-info .info__circle {
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 1332px) {
   .header-content {
     padding: 37px;
@@ -2218,6 +2361,27 @@ h4 {
 
   .footer-start ul li {
     margin-right: 20px;
+  }
+
+  .contact-page-info .info__item:first-child {
+    margin-bottom: 20px;
+  }
+
+  .contact-page-info .info__item:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .mw-167 {
+    max-width: 260px;
+  }
+
+  .contact-page-request .request-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .contact-page-request .col-md-6 {
+    margin-bottom: 19px;
   }
 }
 
@@ -2442,6 +2606,18 @@ h4 {
   .why {
     padding-bottom: 50px;
   }
+
+  .contact-page-info .info__item p {
+    font-size: 18px;
+  }
+
+  .contact-page-info .info__item a {
+    font-size: 18px;
+  }
+
+  .mw-167 {
+    max-width: 170px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -2565,6 +2741,10 @@ h4 {
 
   .footer-start ul a {
     font-size: 14px;
+  }
+
+  .contact-page-info .info__item {
+    margin-bottom: 20px;
   }
 }
 

@@ -1,0 +1,51 @@
+.contact-page-request {
+  .request-content {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background-image: url(../img/bg/registan-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include block_1199 {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  @include block_1199 {
+    .col-md-6 {
+      margin-bottom: 19px;
+    }
+  }
+
+  .request__item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+
+    h3 {
+      margin-bottom: 27px;
+    }
+
+    a {
+      padding: 8px 29px;
+      border: 2px solid #4da9f5;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.21;
+      color: #000000;
+
+      &:hover {
+        color: #fff;
+        background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+      }
+    }
+  }
+}
