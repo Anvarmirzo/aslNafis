@@ -1,0 +1,252 @@
+.foreigner-page {
+  &-header {
+    height: 100vh;
+    background-color: #000;
+  }
+
+  &-desc {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+
+    @include block_575 {
+      top: -128px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 36px;
+    padding-bottom: 50px;
+
+    @include block_575 {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      padding-bottom: 30px;
+      padding-top: 30px;
+
+      .footer-logo a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+
+        .icon {
+          margin-bottom: 18px;
+          margin-right: 0;
+        }
+      }
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 1.21;
+      text-align: center;
+      color: #556270;
+
+      @include block_575 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &-main {
+    position: relative;
+  }
+
+  &-services {
+    padding-top: 196px;
+    padding-bottom: 80px;
+
+    @include block_1199 {
+      padding-bottom: 0;
+    }
+
+    @include block_767 {
+      padding-top: 246px;
+    }
+
+    @include custom-media(438px) {
+      padding-top: 260px;
+    }
+
+    @include custom-media(421px) {
+      padding-top: 218px;
+    }
+
+    @include custom-media(380px) {
+      padding-top: 239px;
+    }
+
+    @include custom-media(366px) {
+      padding-top: 261px;
+    }
+
+    @include custom-media(350px) {
+      padding-top: 260px;
+    }
+
+    @include custom-media(325px) {
+      padding-top: 282px;
+    }
+
+    h2 {
+      margin-bottom: 50px;
+
+      @include block_575 {
+        margin-bottom: 30px;
+      }
+    }
+
+    .our-services {
+      background-color: #FFFFFF;
+      box-shadow: 4px 4px 10px -5px rgba(0, 0, 0, 0.15);
+      padding: 50px;
+      background-image: url(../img/svg/logo-xl.svg);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+
+      @include block_991 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        background-image: none;
+        background-color: transparent;
+        box-shadow: none;
+      }
+
+      &-rotated {
+        background-image: url(../img/svg/logo-xl-rotated.svg);
+        background-position: left top;
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.22;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 57px;
+
+        @include block_575 {
+          margin-bottom: 30px;
+          font-size: 24px;
+        }
+      }
+
+      p {
+        max-width: 370px;
+        font-size: 24px;
+        line-height: 1.22;
+        color: #556270;
+
+        @include custom-media(1439px) {
+          font-size: 22px;
+          max-width: 300px;
+        }
+
+        @include block_1199 {
+          font-size: 20px;
+          max-width: 247px;
+        }
+
+        @include block_991 {
+          max-width: 420px;
+        }
+
+        @include block_767 {
+          max-width: 410px;
+        }
+
+        @include block_575 {
+          font-size: 14px;
+          max-width: 209px;
+        }
+      }
+
+      &-item {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+
+        @include block_1199 {
+          margin-bottom: 25px;
+          background-color: #fff;
+          position: relative;
+          overflow: hidden;
+
+          &:nth-child(even) {
+            &::before {
+              position: absolute;
+              right: -5px;
+              bottom: -11px;
+              content: '';
+              background-image: url(../img/svg/logo.svg);
+              opacity: 0.2;
+              transform: rotate(-45deg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              width: 54px;
+              height: 45px;
+            }
+          }
+
+          &:nth-child(odd) {
+            &::before {
+              position: absolute;
+              left: 58px;
+              bottom: -6px;
+              content: '';
+              background-image: url(../img/svg/logo.svg);
+              transform: rotate(45deg);
+              opacity: 0.2;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              width: 54px;
+              height: 45px;
+            }
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+
+          @include block_1199 {
+            margin-bottom: 50px;
+          }
+
+        }
+
+        @include block_575 {
+          margin-bottom: 10px;
+        }
+      }
+
+      .icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+        box-shadow: 0px 4px 15px -5px #4DA9F5;
+        width: 70px;
+        height: 70px;
+        margin-right: 30px;
+
+        @include block_575 {
+          height: 100px;
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+}
