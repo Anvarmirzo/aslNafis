@@ -1031,6 +1031,30 @@ section {
   height: 40px;
 }
 
+.pallet {
+  background-image: url(../img/svg/pallet.svg);
+  width: 40px;
+  height: 40px;
+}
+
+.growth {
+  background-image: url(../img/svg/growth.svg);
+  width: 40px;
+  height: 40px;
+}
+
+.help {
+  background-image: url(../img/svg/help.svg);
+  width: 40px;
+  height: 40px;
+}
+
+.download {
+  background-image: url(../img/svg/download.svg);
+  width: 18px;
+  height: 18px;
+}
+
 .main-nav {
   background-color: #fff;
   padding-top: 75px;
@@ -1228,7 +1252,7 @@ h2 {
 }
 
 section h2 {
-  margin-bottom: 89px;
+  margin-bottom: 63px;
   text-align: center;
   background-image: -o-linear-gradient(0.02deg, rgba(208, 235, 255, 0) 13.01%, #D0EBFF 50.97%, rgba(255, 255, 255, 0) 85.89%);
   background-image: linear-gradient(89.98deg, rgba(208, 235, 255, 0) 13.01%, #D0EBFF 50.97%, rgba(255, 255, 255, 0) 85.89%);
@@ -2678,6 +2702,84 @@ h4 {
   opacity: 0.6;
 }
 
+.wholesaler-page-main .header__container {
+  padding-bottom: 0;
+}
+
+.wholesaler-page-main .header-content {
+  margin-bottom: 0;
+}
+
+.wholesaler-page-main .foreigner-page-services {
+  padding-top: 80px;
+  padding-bottom: 0;
+}
+
+.wholesaler-page-main .foreigner-page-services .our-services {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.wholesaler-page-main .foreigner-page-services .our-services-item:nth-child(even)::before,
+.wholesaler-page-main .foreigner-page-services .our-services-item:nth-child(odd)::before {
+  display: none;
+}
+
+.wholesaler-desc {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.22;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 30px;
+  margin-bottom: 58px;
+  border-bottom: 2px solid rgba(68, 68, 68, 0.1);
+}
+
+.wholesaler-desc.download__text {
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.wholesaler-desc.download__text a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 21px;
+  background-image: -o-linear-gradient(315deg, #74C0FC 0%, #339AF0 100%);
+  background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+  border-radius: 5px;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 6px 29px 6px 26px;
+}
+
+.wholesaler-desc.download__text a .download {
+  margin-left: 8px;
+}
+
+.wholesaler-map-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -3335,6 +3437,10 @@ h4 {
   .foreigner-page-services .our-services-item:last-child {
     margin-bottom: 50px;
   }
+
+  .wholesaler-desc {
+    font-size: 29px;
+  }
 }
 
 @media (max-width: 1199.98px) and (max-width: 767.98px) {
@@ -3550,6 +3656,36 @@ h4 {
 
   .contact-form-info {
     margin-bottom: 16px;
+  }
+
+  .wholesaler-page-main .contact-form {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .wholesaler-page-main .foreigner-page-services .our-services-item {
+    width: 100%;
+  }
+
+  .wholesaler-desc.download__text {
+    position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .wholesaler-desc.download__text a {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -50px;
+    margin-left: 0;
+  }
+
+  .wholesaler-map-wrapper {
+    margin-bottom: 30px;
   }
 }
 
@@ -4316,6 +4452,22 @@ h4 {
   .contact-form-info a {
     display: inline-block;
     margin-top: 10px;
+  }
+
+  .wholesaler-page-main .foreigner-page-services {
+    padding-top: 50px;
+  }
+
+  .wholesaler-page-main .foreigner-page-services .our-services .icon-wrapper {
+    height: 70px;
+  }
+
+  .wholesaler-desc.download__text a {
+    font-size: 14px;
+  }
+
+  .wholesaler-desc {
+    font-size: 18px;
   }
 }
 

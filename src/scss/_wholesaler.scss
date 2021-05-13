@@ -1,0 +1,117 @@
+.wholesaler {
+  &-page-main {
+    .header__container {
+      padding-bottom: 0;
+    }
+
+    .header-content {
+      margin-bottom: 0;
+    }
+
+    .foreigner-page-services {
+      padding-top: 80px;
+      padding-bottom: 0;
+
+      @include block_575 {
+        padding-top: 50px;
+      }
+
+      .our-services {
+        background-color: transparent;
+        background-image: none;
+        box-shadow: none;
+      }
+    }
+
+    @include block_991 {
+      .contact-form {
+        padding-top: 50px;
+        text-align: center;
+      }
+    }
+
+    .foreigner-page-services .our-services-item:nth-child(even)::before,
+    .foreigner-page-services .our-services-item:nth-child(odd)::before {
+      display: none;
+    }
+
+    @include block_991 {
+      .foreigner-page-services .our-services-item {
+        width: 100%;
+      }
+    }
+
+    @include block_575 {
+      .foreigner-page-services .our-services .icon-wrapper {
+        height: 70px;
+      }
+    }
+  }
+
+  &-desc {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.22;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 30px;
+    margin-bottom: 58px;
+    border-bottom: 2px solid rgba(68, 68, 68, 0.1);
+
+    @include block_1199 {
+      font-size: 29px;
+    }
+
+    &.download__text {
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+
+      @include block_991 {
+        position: relative;
+        justify-content: center;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        margin-left: 21px;
+        background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+        border-radius: 5px;
+        font-size: 24px;
+        color: #FFFFFF;
+        padding: 6px 29px 6px 26px;
+
+        @include block_991 {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -50px;
+          margin-left: 0;
+        }
+
+        @include block_575 {
+          font-size: 14px;
+        }
+
+        .download {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    @include block_575 {
+      font-size: 18px;
+    }
+  }
+
+  &-map-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include block_991 {
+      margin-bottom: 30px;
+    }
+  }
+}
