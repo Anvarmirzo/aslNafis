@@ -1,0 +1,33 @@
+.retail-why {
+  &__item {
+    display: flex;
+    height: auto;
+    background-image: linear-gradient(129.08deg, #FFFFFF 10.51%, #E6F3FF 100%);
+    box-shadow: 4px 4px 10px -5px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(15px);
+
+    &-start {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 15px;
+      background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+      box-shadow: 0px 4px 15px -5px #4DA9F5;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.22;
+      color: #FFFFFF;
+    }
+
+    p {
+      padding: 12px 10px;
+      font-size: 24px;
+      line-height: 1.22;
+      color: #556270;
+
+      @include block_575 {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -18,37 +18,6 @@ $(document).ready(function () {
     nav.classList.toggle('active');
   });
   ;
-  /* Partner Swiper */
-
-  /* let partnerSwiper = new Swiper('.partners-slider .swiper-container', {
-    speed: 3000,
-    freeMode: true,
-    loop: true,
-    allowTouchMove: false,
-    autoplay: {
-      delay: 1,
-      enabled: true,
-      waitForTransition: false,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-      1200: {
-        slidesPerView: 7,
-      },
-    },
-  }); */
-
   /* Lagan Swiper */
 
   var laganSwiper = new Swiper('.header-content .swiper-container', {
@@ -249,6 +218,68 @@ $(document).ready(function () {
   $('.certificates .next').click(function () {
     certificatesSwiper.slideNext();
   });
+  /* Retail Swiper */
+
+  var retailSwiper = new Swiper('.retail-why .swiper-container', {
+    spaceBetween: 28,
+    loop: true,
+    centerMode: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      991: {
+        slidesPerView: 2
+      },
+      1200: {
+        slidesPerView: 3
+      },
+      1400: {
+        slidesPerView: 3
+      }
+    }
+  });
+  /* Where Swiper */
+
+  var whereSwiper = new Swiper('.where .swiper-container', {
+    spaceBetween: 0,
+    loop: true,
+    centerMode: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      991: {
+        slidesPerView: 2
+      },
+      1200: {
+        slidesPerView: 3
+      },
+      1400: {
+        slidesPerView: 4
+      }
+    }
+  });
   ;
 
   if (document.querySelector('.production_process') && $(window).width() < 768) {
@@ -316,20 +347,23 @@ $(document).ready(function () {
   /* Map downloading */
 
   var map_container = document.getElementById('map_container');
-  map_container.addEventListener('click', start_lazy_map);
-  map_container.addEventListener('mouseover', start_lazy_map);
-  map_container.addEventListener('touchstart', start_lazy_map);
-  map_container.addEventListener('touchmove', start_lazy_map);
-  var map_loaded = false;
 
-  function start_lazy_map() {
-    if (!map_loaded) {
-      var script = document.createElement('script');
-      script.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8743196ad6e9630d2fee696a98a03547fb3079cba3bdf179c2224e3bd787e3a1&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true';
-      document.getElementById('ymap_lazy').replaceWith(script);
-      map_loaded = true;
-      console.log('YMAP LOADED');
-    }
+  if (map_container) {
+    var start_lazy_map = function start_lazy_map() {
+      if (!map_loaded) {
+        var script = document.createElement('script');
+        script.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8743196ad6e9630d2fee696a98a03547fb3079cba3bdf179c2224e3bd787e3a1&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true';
+        document.getElementById('ymap_lazy').replaceWith(script);
+        map_loaded = true;
+        console.log('YMAP LOADED');
+      }
+    };
+
+    map_container.addEventListener('click', start_lazy_map);
+    map_container.addEventListener('mouseover', start_lazy_map);
+    map_container.addEventListener('touchstart', start_lazy_map);
+    map_container.addEventListener('touchmove', start_lazy_map);
+    var map_loaded = false;
   }
 
   ;

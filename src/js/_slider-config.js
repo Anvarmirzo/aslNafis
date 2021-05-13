@@ -1,33 +1,3 @@
-/* Partner Swiper */
-/* let partnerSwiper = new Swiper('.partners-slider .swiper-container', {
-  speed: 3000,
-  freeMode: true,
-  loop: true,
-  allowTouchMove: false,
-  autoplay: {
-    delay: 1,
-    enabled: true,
-    waitForTransition: false,
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    640: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
-    1200: {
-      slidesPerView: 7,
-    },
-  },
-}); */
-
 /* Lagan Swiper */
 let laganSwiper = new Swiper('.header-content .swiper-container', {
   slidesPerView: 1,
@@ -132,6 +102,7 @@ let whySwiper = new Swiper('.why .swiper-container', {
     },
   },
 });
+
 /* Partners Swiper */
 let partnerSwiper = new Swiper('.partners .swiper-container', {
   spaceBetween: 10,
@@ -226,4 +197,66 @@ $('.certificates .prev').click(() => {
 
 $('.certificates .next').click(() => {
   certificatesSwiper.slideNext();
+});
+
+/* Retail Swiper */
+let retailSwiper = new Swiper('.retail-why .swiper-container', {
+  spaceBetween: 28,
+  loop: true,
+  centerMode: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+    1400: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+/* Where Swiper */
+let whereSwiper = new Swiper('.where .swiper-container', {
+  spaceBetween: 0,
+  loop: true,
+  centerMode: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+    1400: {
+      slidesPerView: 4,
+    },
+  },
 });

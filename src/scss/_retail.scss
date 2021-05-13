@@ -1,0 +1,75 @@
+.retail {
+  &-main {
+    .form {
+      padding-top: 60px;
+
+      @include block_575 {
+        padding-top: 50px;
+      }
+    }
+  }
+
+  &-header {
+    background-image: url(../img/bg/retail-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    .header__container {
+      margin-top: 12px;
+
+      @include block_767 {
+        margin-top: 0;
+      }
+    }
+
+    &__bottom {
+      padding-top: 63px;
+      text-align: center;
+      justify-content: center;
+
+      @include block_575 {
+        padding-top: 26px;
+        padding-bottom: 26px;
+      }
+
+      .logo-wrapper {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .icon {
+        width: 94px;
+        height: 75px;
+        background-size: cover;
+        margin-bottom: 42px;
+
+        @include block_575 {
+          margin-bottom: 34px;
+        }
+      }
+
+      .logo-title {
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 1.22;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 24px;
+        line-height: 1.22;
+        color: #FFFFFF;
+
+        @include block_575 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
