@@ -1013,7 +1013,7 @@ section {
   height: 40px;
 }
 
-.delivery {
+.deliver {
   background-image: url(../img/svg/delivery.svg);
   width: 40px;
   height: 40px;
@@ -2257,12 +2257,11 @@ h4 {
 
 .catalog .controller button {
   background: transparent;
-  border: none;
-  border-bottom: 2px solid transparent;
-  border-radius: 3px;
+  border-radius: 5px;
   outline: none;
-  padding: 0;
+  padding: 9px;
   font-size: 20px;
+  border: 2px solid #74C0FC;
 }
 
 .catalog .controller button:not(:last-of-type) {
@@ -2274,7 +2273,9 @@ h4 {
 }
 
 .catalog .controller button.active {
-  border-color: #74C0FC;
+  background-image: -o-linear-gradient(315deg, #74C0FC 0%, #339AF0 100%);
+  background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+  color: #FFFFFF;
 }
 
 .catalog .tabs .tab {
