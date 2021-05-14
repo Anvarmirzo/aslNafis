@@ -4595,7 +4595,7 @@ h4 {
 
   .nav-toggle {
     display: initial;
-    z-index: 3;
+    z-index: 100;
   }
 
   .header__container {
