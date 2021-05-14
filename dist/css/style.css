@@ -1074,6 +1074,18 @@ section {
   height: 40px;
 }
 
+.arrow-fill-down {
+  background-image: url(../img/svg/blue-arrow-fill.svg);
+  width: 16px;
+  height: 13px;
+}
+
+.arrow-empty-down {
+  background-image: url(../img/svg/arrow-empty-down.svg);
+  width: 16px;
+  height: 13px;
+}
+
 .main-nav {
   background-color: #fff;
   padding-top: 75px;
@@ -1417,6 +1429,38 @@ h4 {
 
 .where-item {
   padding: 30px 50px;
+}
+
+.lifehack .container {
+  position: relative;
+}
+
+.lifehack .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.lifehack .slider-navigation {
+  top: 63%;
+}
+
+.lifehack .slider-navigation .why-arrow-left {
+  margin-left: -74px;
+}
+
+.lifehack .slider-navigation .why-arrow-right {
+  margin-right: -44px;
 }
 
 .set-card {
@@ -3005,6 +3049,104 @@ h4 {
   padding-right: 45px;
 }
 
+.lifehack-main .shops-form-title {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.lifehack-main .swiper-slide p {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.22;
+  color: #556270;
+}
+
+.lifehack-main .why {
+  padding-bottom: 0;
+}
+
+.lifehack-main .show-lg {
+  display: none;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question.show-text .question-text {
+  height: auto;
+  padding: 48px 47px;
+  opacity: 1;
+}
+
+.question.show-text .arrow-fill-down {
+  display: block;
+}
+
+.question.show-text .arrow-empty-down {
+  display: none;
+}
+
+.question-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 28px 47px;
+}
+
+.question-title p {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.22;
+  color: rgba(85, 98, 112, 0.75);
+}
+
+.question-text {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0;
+  background-image: -o-linear-gradient(310.51deg, #F6F6F6 0%, #FFFFFF 100%);
+  background-image: linear-gradient(139.49deg, #F6F6F6 0%, #FFFFFF 100%);
+  -webkit-box-shadow: 4px 4px 10px -5px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 4px 10px -5px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 5px 5px;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.question-text p {
+  font-size: 24px;
+  line-height: 1.22;
+  color: #556270;
+}
+
+.question .arrow-fill-down {
+  display: none;
+}
+
+.question .arrow-empty-down {
+  display: block;
+}
+
+.faq .question-btn {
+  padding: 10px;
+  background-color: transparent;
+  border-width: 0;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -3575,6 +3717,16 @@ h4 {
   }
 }
 
+@media (max-width: 1300px) {
+  .lifehack .slider-navigation .why-arrow-left {
+    margin-left: -31px;
+  }
+
+  .lifehack .slider-navigation .why-arrow-right {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .me-49 {
     margin-right: 15px;
@@ -3915,6 +4067,14 @@ h4 {
 
   .shops-item {
     margin-bottom: 10px;
+  }
+
+  .lifehack-main .hide-lg {
+    display: none;
+  }
+
+  .lifehack-main .show-lg {
+    display: inline-block;
   }
 }
 
@@ -4493,6 +4653,18 @@ h4 {
     top: -116%;
   }
 
+  .lifehack .slider-navigation {
+    top: 57%;
+  }
+
+  .lifehack .slider-navigation .why-arrow-left {
+    margin-left: 30px;
+  }
+
+  .lifehack .slider-navigation .why-arrow-right {
+    margin-right: 67px;
+  }
+
   .set-card {
     min-height: 260px;
   }
@@ -4739,6 +4911,28 @@ h4 {
     padding-left: 0;
     padding-bottom: 20px;
     margin-bottom: 19px;
+  }
+
+  .question.show-text .question-text {
+    padding: 30px 25px;
+  }
+
+  .question-title {
+    padding: 15px 20px;
+  }
+
+  .question-title p {
+    font-size: 18px;
+  }
+
+  .question-text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 523px) {
+  .lifehack .slider-navigation {
+    display: none;
   }
 }
 

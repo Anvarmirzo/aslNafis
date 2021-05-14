@@ -7,4 +7,5 @@ $(document).ready(function () {
   @@include('_fullpage_config.js');
   @@include('_catalog-page.js');
   @@include('_map.js');
+  @@include('_questions.js');
 });

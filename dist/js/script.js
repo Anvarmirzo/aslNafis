@@ -101,10 +101,14 @@ $(document).ready(function () {
   var whySwiper = new Swiper('.why .swiper-container', {
     spaceBetween: 10,
     loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false
+    },
     centerMode: true,
     navigation: {
-      nextEl: '.why .why-arrow-left',
-      prevEl: '.why .why-arrow-right'
+      nextEl: '.why .why-arrow-right',
+      prevEl: '.why .why-arrow-left'
     },
     breakpoints: {
       320: {
@@ -366,5 +370,19 @@ $(document).ready(function () {
     var map_loaded = false;
   }
 
+  ; //using selectors inside the element
+
+  var questions = document.querySelectorAll('.question');
+  questions.forEach(function (question) {
+    var btn = question.querySelector('.question-btn');
+    btn.addEventListener('click', function () {
+      questions.forEach(function (item) {
+        if (item !== question) {
+          item.classList.remove('show-text');
+        }
+      });
+      question.classList.toggle('show-text');
+    });
+  });
   ;
 });

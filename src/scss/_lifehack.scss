@@ -1,0 +1,120 @@
+.lifehack-main {
+  .shops-form-title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .swiper-slide {
+    p {
+      margin-top: 30px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.22;
+      color: #556270;
+    }
+  }
+
+  .why {
+    padding-bottom: 0;
+  }
+
+  .hide-lg {
+    @include block_991 {
+      display: none;
+    }
+  }
+
+  .show-lg {
+    display: none;
+
+    @include block_991 {
+      display: inline-block;
+    }
+  }
+}
+
+.question {
+  margin-bottom: 20px;
+
+  &.show-text {
+    .question-text {
+      height: auto;
+      padding: 48px 47px;
+      opacity: 1;
+
+      @include block_575 {
+        padding: 30px 25px;
+      }
+    }
+
+    .arrow-fill-down {
+      display: block;
+    }
+
+    .arrow-empty-down {
+      display: none;
+    }
+  }
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 28px 47px;
+
+    @include block_575 {
+      padding: 15px 20px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 1.22;
+      color: rgba(85, 98, 112, 0.75);
+
+      @include block_575 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &-text {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    background-image: linear-gradient(139.49deg, #F6F6F6 0%, #FFFFFF 100%);
+    box-shadow: 4px 4px 10px -5px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 5px 5px;
+    transition: .4s;
+
+    p {
+      font-size: 24px;
+      line-height: 1.22;
+      color: #556270;
+
+      @include block_575 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .arrow-fill-down {
+    display: none;
+  }
+
+  .arrow-empty-down {
+    display: block;
+  }
+}
+
+.faq {
+  .question-btn {
+    padding: 10px;
+    background-color: transparent;
+    border-width: 0;
+  }
+}

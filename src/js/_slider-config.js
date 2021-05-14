@@ -79,10 +79,14 @@ let setSwiper = new Swiper('.set .swiper-container', {
 let whySwiper = new Swiper('.why .swiper-container', {
   spaceBetween: 10,
   loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   centerMode: true,
   navigation: {
-    nextEl: '.why .why-arrow-left',
-    prevEl: '.why .why-arrow-right',
+    nextEl: '.why .why-arrow-right',
+    prevEl: '.why .why-arrow-left',
   },
   breakpoints: {
     320: {
