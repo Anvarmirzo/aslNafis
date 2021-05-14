@@ -1168,7 +1168,7 @@ section {
   }
 
   100% {
-    opacity: 0;
+    opacity: .2;
     -webkit-transform: scaleX(3) scaleY(3);
     transform: scaleX(3) scaleY(3);
   }
@@ -1182,7 +1182,7 @@ section {
   }
 
   100% {
-    opacity: 0;
+    opacity: .2;
     -webkit-transform: scaleX(3) scaleY(3);
     transform: scaleX(3) scaleY(3);
   }
