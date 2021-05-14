@@ -18,6 +18,8 @@
     background-color: #E3F3FB;
     padding: 42px 114px 37px;
     margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
 
     @include custom-media(1332px) {
       padding: 37px;
@@ -25,6 +27,33 @@
 
     @include block_575 {
       padding: 15px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-color: #3297EE;
+      left: 10%;
+      bottom: -20px;
+      box-shadow: 0px 0px 20px 20px #3297ee;
+      animation: moving linear 10s infinite;
+    }
+
+    &::after {
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      content: '';
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #3297EE;
+      box-shadow: 0px 0px 20px 20px #3297ee;
+      animation: resizing linear 3s infinite alternate;
     }
 
     h2 {

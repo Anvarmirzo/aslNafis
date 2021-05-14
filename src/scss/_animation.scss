@@ -1,0 +1,38 @@
+@keyframes resizing {
+  0% {
+    opacity: 1;
+    transform: scaleX(0) scaleY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleX(3) scaleY(3);
+  }
+}
+
+@keyframes moving {
+  0% {
+    left: 10%;
+    bottom: -20px;
+  }
+
+  35% {
+    left: 70%;
+    bottom: 100%;
+  }
+
+  50% {
+    bottom: 75%;
+    left: 100%;
+  }
+
+  75% {
+    bottom: 100%;
+    left: 60%;
+  }
+
+  100% {
+    left: 10%;
+    bottom: -20px;
+  }
+}

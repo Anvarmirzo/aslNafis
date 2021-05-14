@@ -1160,6 +1160,88 @@ section {
   padding: 11px;
 }
 
+@-webkit-keyframes resizing {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleX(0) scaleY(0);
+    transform: scaleX(0) scaleY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(3) scaleY(3);
+    transform: scaleX(3) scaleY(3);
+  }
+}
+
+@keyframes resizing {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleX(0) scaleY(0);
+    transform: scaleX(0) scaleY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(3) scaleY(3);
+    transform: scaleX(3) scaleY(3);
+  }
+}
+
+@-webkit-keyframes moving {
+  0% {
+    left: 10%;
+    bottom: -20px;
+  }
+
+  35% {
+    left: 70%;
+    bottom: 100%;
+  }
+
+  50% {
+    bottom: 75%;
+    left: 100%;
+  }
+
+  75% {
+    bottom: 100%;
+    left: 60%;
+  }
+
+  100% {
+    left: 10%;
+    bottom: -20px;
+  }
+}
+
+@keyframes moving {
+  0% {
+    left: 10%;
+    bottom: -20px;
+  }
+
+  35% {
+    left: 70%;
+    bottom: 100%;
+  }
+
+  50% {
+    bottom: 75%;
+    left: 100%;
+  }
+
+  75% {
+    bottom: 100%;
+    left: 60%;
+  }
+
+  100% {
+    left: 10%;
+    bottom: -20px;
+  }
+}
+
 .header {
   background-image: url(../img/bg/header-bg.jpg);
   background-repeat: no-repeat;
@@ -1177,6 +1259,41 @@ section {
   background-color: #E3F3FB;
   padding: 42px 114px 37px;
   margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-content::before {
+  position: absolute;
+  content: '';
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #3297EE;
+  left: 10%;
+  bottom: -20px;
+  -webkit-box-shadow: 0px 0px 20px 20px #3297ee;
+  box-shadow: 0px 0px 20px 20px #3297ee;
+  -webkit-animation: moving linear 10s infinite;
+  animation: moving linear 10s infinite;
+}
+
+.header-content::after {
+  right: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #3297EE;
+  -webkit-box-shadow: 0px 0px 20px 20px #3297ee;
+  box-shadow: 0px 0px 20px 20px #3297ee;
+  -webkit-animation: resizing linear 3s infinite alternate;
+  animation: resizing linear 3s infinite alternate;
 }
 
 .header-content--margin {
