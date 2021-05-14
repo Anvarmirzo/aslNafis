@@ -4551,7 +4551,7 @@ h4 {
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    z-index: 3;
+    z-index: 101;
   }
 
   .main-nav-links {
@@ -4595,7 +4595,7 @@ h4 {
 
   .nav-toggle {
     display: initial;
-    z-index: 100;
+    z-index: 101;
   }
 
   .header__container {

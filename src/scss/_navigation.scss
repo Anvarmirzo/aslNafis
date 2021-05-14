@@ -30,7 +30,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      z-index: 3;
+      z-index: 101;
     }
 
     .logo {
@@ -112,6 +112,6 @@
 
   @include block_767 {
     display: initial;
-    z-index: 100;
+    z-index: 101;
   }
 }
