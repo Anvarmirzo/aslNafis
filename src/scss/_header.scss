@@ -3,32 +3,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
 
-  &__container {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 40px;
-
-    @include block_767 {
-      padding: 0 0 24px;
-    }
-  }
-
-  &-content {
-    background-color: #E3F3FB;
-    padding: 42px 114px 37px;
-    margin-bottom: 24px;
-    position: relative;
-    overflow: hidden;
-
-    @include custom-media(1332px) {
-      padding: 37px;
-    }
-
-    @include block_575 {
-      padding: 15px;
-    }
-
+  @include block_767 {
     &::before {
       position: absolute;
       content: '';
@@ -55,6 +33,70 @@
       box-shadow: 0px 0px 20px 20px #3297ee;
       animation: resizing linear 3s infinite alternate;
     }
+  }
+
+  @include block_767 {
+    background-image: none;
+  }
+
+  &__container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+
+    @include block_767 {
+      padding: 0 0 24px;
+    }
+  }
+
+  &-content {
+    background-color: #E3F3FB;
+    padding: 42px 114px 37px;
+    margin-bottom: 24px;
+
+    @media (min-width:768px) {
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-color: #3297EE;
+        left: 10%;
+        bottom: -20px;
+        box-shadow: 0px 0px 20px 20px #3297ee;
+        animation: moving linear 10s infinite;
+      }
+
+      &::after {
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #3297EE;
+        box-shadow: 0px 0px 20px 20px #3297ee;
+        animation: resizing linear 3s infinite alternate;
+      }
+    }
+
+
+
+    @include custom-media(1332px) {
+      padding: 37px;
+    }
+
+    @include block_575 {
+      padding: 15px;
+    }
+
+
 
     h2 {
       background-image: none;

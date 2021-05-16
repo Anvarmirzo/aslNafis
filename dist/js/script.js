@@ -13,8 +13,20 @@ $(document).ready(function () {
 
   var nav = document.querySelector('.links-container');
   var burger = document.querySelector('.nav-toggle');
+  var openDropdown = document.querySelector('.open-dropdown');
+  var dropdownMenu = document.querySelector('.dropdown-menu');
+  var navLayer = document.querySelector('.nav-layer');
   burger.addEventListener('click', function (e) {
     nav.classList.toggle('active');
+    document.body.classList.toggle('overflow-hidden');
+  });
+  openDropdown.addEventListener('click', function (e) {
+    dropdownMenu.classList.toggle('active');
+    navLayer.classList.toggle('active');
+  });
+  navLayer.addEventListener('click', function (e) {
+    dropdownMenu.classList.remove('active');
+    navLayer.classList.remove('active');
   });
   var modalOpeners = document.querySelectorAll('.get-modal');
   var modals = document.querySelectorAll('.modal');
