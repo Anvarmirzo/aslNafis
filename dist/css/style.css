@@ -4960,6 +4960,7 @@ h4 {
   .header-content a {
     font-size: 14px;
     padding: 13px 37px;
+    border-width: 2px;
   }
 
   .header-card h3 {
@@ -5017,6 +5018,10 @@ h4 {
 
   .popular {
     padding-bottom: 30px;
+  }
+
+  .popular .col-lg-3:nth-child(odd) {
+    padding-right: 0;
   }
 
   .popular .to-catalog {
@@ -5292,8 +5297,18 @@ h4 {
     top: -90%;
   }
 
+  .popular-card {
+    margin-bottom: 15px;
+  }
+
+  .popular-card h4 {
+    font-size: 9px;
+    text-align: left;
+  }
+
   .popular-card-img {
     min-height: 148px;
+    margin-bottom: 10px;
   }
 
   .popular-card-img img {
