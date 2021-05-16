@@ -1,4 +1,5 @@
 .form.modal {
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 0;
   position: fixed;
   top: 50%;
@@ -14,15 +15,26 @@
   z-index: 11111;
   transition: .5s;
 
-  .active {
+  &.active {
     opacity: 1;
     visibility: visible;
   }
 
   .form-wrapper {
+    position: relative;
     width: 670px;
     height: 771px;
     margin: 0 !important;
+
+    @include block_991 {
+      width: 80%;
+      height: 80%;
+    }
+
+    @include block_575 {
+      width: 80%;
+      height: auto;
+    }
   }
 
   div {
@@ -31,5 +43,28 @@
 
   h3 {
     font-size: 36px;
+
+    @include block_991 {
+      font-size: 30px;
+    }
+
+    @include block_575 {
+      font-size: 18px;
+    }
+  }
+
+  .close {
+    position: absolute;
+    right: 7%;
+    top: 5%;
+
+    @include block_575 {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .row {
+    margin-bottom: 0 !important;
   }
 }

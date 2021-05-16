@@ -16,6 +16,25 @@ $(document).ready(function () {
   burger.addEventListener('click', function (e) {
     nav.classList.toggle('active');
   });
+  var modalOpeners = document.querySelectorAll('.get-modal');
+  var modals = document.querySelectorAll('.modal');
+  modalOpeners.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      var close = document.querySelectorAll('.close');
+      modals.forEach(function (modal) {
+        if (btn.getAttribute('data-modal') === modal.getAttribute('data-modal')) {
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+          close.forEach(function (item) {
+            item.addEventListener('click', function () {
+              modal.classList.remove('active');
+              document.body.style.overflow = 'auto';
+            });
+          });
+        }
+      });
+    });
+  });
   /* Lagan Swiper */
 
   var laganSwiper = new Swiper('.header-content .swiper-container', {

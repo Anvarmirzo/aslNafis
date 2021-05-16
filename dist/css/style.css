@@ -1086,6 +1086,14 @@ section {
   height: 13px;
 }
 
+.close {
+  background-image: url(../img/svg/close.svg);
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-position: initial;
+}
+
 .main-nav {
   background-color: #fff;
   padding-top: 75px;
@@ -2038,7 +2046,7 @@ h4 {
   margin-bottom: 27px;
 }
 
-.contact-page-request .request__item a {
+.contact-page-request .request__item button {
   padding: 8px 29px;
   border: 2px solid #4da9f5;
   border-radius: 5px;
@@ -2046,9 +2054,10 @@ h4 {
   font-size: 14px;
   line-height: 1.21;
   color: #000000;
+  background-color: transparent;
 }
 
-.contact-page-request .request__item a:hover {
+.contact-page-request .request__item button:hover {
   color: #fff;
   background-image: -o-linear-gradient(315deg, #74C0FC 0%, #339AF0 100%);
   background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
@@ -3270,6 +3279,7 @@ h4 {
 }
 
 .form.modal {
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 0;
   position: fixed;
   top: 50%;
@@ -3296,12 +3306,13 @@ h4 {
   transition: .5s;
 }
 
-.form.modal .active {
+.form.modal.active {
   opacity: 1;
   visibility: visible;
 }
 
 .form.modal .form-wrapper {
+  position: relative;
   width: 670px;
   height: 771px;
   margin: 0 !important;
@@ -3313,6 +3324,16 @@ h4 {
 
 .form.modal h3 {
   font-size: 36px;
+}
+
+.form.modal .close {
+  position: absolute;
+  right: 7%;
+  top: 5%;
+}
+
+.form.modal .row {
+  margin-bottom: 0 !important;
 }
 
 @media (min-width: 576px) {
@@ -4244,6 +4265,15 @@ h4 {
   .lifehack-main .show-lg {
     display: inline-block;
   }
+
+  .form.modal .form-wrapper {
+    width: 80%;
+    height: 80%;
+  }
+
+  .form.modal h3 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -5095,6 +5125,20 @@ h4 {
 
   .question-text p {
     font-size: 14px;
+  }
+
+  .form.modal .form-wrapper {
+    width: 80%;
+    height: auto;
+  }
+
+  .form.modal h3 {
+    font-size: 18px;
+  }
+
+  .form.modal .close {
+    width: 20px;
+    height: 20px;
   }
 }
 

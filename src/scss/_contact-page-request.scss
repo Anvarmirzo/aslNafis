@@ -39,7 +39,7 @@
       margin-bottom: 27px;
     }
 
-    a {
+    button {
       padding: 8px 29px;
       border: 2px solid #4da9f5;
       border-radius: 5px;
@@ -47,6 +47,7 @@
       font-size: 14px;
       line-height: 1.21;
       color: #000000;
+      background-color: transparent;
 
       &:hover {
         color: #fff;
