@@ -16,19 +16,25 @@ $(document).ready(function () {
   var openDropdown = document.querySelector('.open-dropdown');
   var dropdownMenu = document.querySelector('.dropdown-menu');
   var navLayer = document.querySelector('.nav-layer');
-  console.log(burger);
   burger.addEventListener('click', function (e) {
     nav.classList.toggle('active');
     document.body.classList.toggle('overflow-hidden');
   });
-  openDropdown.addEventListener('click', function (e) {
-    dropdownMenu.classList.toggle('active');
-    navLayer.classList.toggle('active');
-  });
-  navLayer.addEventListener('click', function (e) {
-    dropdownMenu.classList.remove('active');
-    navLayer.classList.remove('active');
-  });
+
+  if (openDropdown) {
+    openDropdown.addEventListener('click', function (e) {
+      dropdownMenu.classList.toggle('active');
+      navLayer.classList.toggle('active');
+    });
+  }
+
+  if (navLayer) {
+    navLayer.addEventListener('click', function (e) {
+      dropdownMenu.classList.remove('active');
+      navLayer.classList.remove('active');
+    });
+  }
+
   var modalOpeners = document.querySelectorAll('.get-modal');
   var modals = document.querySelectorAll('.modal');
   modalOpeners.forEach(function (btn) {
@@ -386,7 +392,6 @@ $(document).ready(function () {
         script.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8743196ad6e9630d2fee696a98a03547fb3079cba3bdf179c2224e3bd787e3a1&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true';
         document.getElementById('ymap_lazy').replaceWith(script);
         map_loaded = true;
-        console.log('YMAP LOADED');
       }
     };
 

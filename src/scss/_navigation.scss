@@ -10,6 +10,8 @@
   }
 
   &.mobile {
+    background-color: #e3f3fb;
+
     .main-nav-header {
       a {
         z-index: 0;
@@ -24,7 +26,7 @@
   @include block_767 {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #e3f3fb;
+
   }
 
   &__container {

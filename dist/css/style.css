@@ -1104,6 +1104,10 @@ section {
   padding-bottom: 75px;
 }
 
+.main-nav.mobile {
+  background-color: #e3f3fb;
+}
+
 .main-nav.mobile .main-nav-header a {
   z-index: 0;
 }
@@ -2038,7 +2042,7 @@ h4 {
 }
 
 .contact-page-nav {
-  background-color: rgba(68, 68, 68, 0.05);
+  background-color: rgba(68, 68, 68, 0.05) !important;
 }
 
 .contact-page-info {
@@ -4722,7 +4726,6 @@ h4 {
   .main-nav {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #e3f3fb;
   }
 
   .main-nav-header {
@@ -5353,6 +5356,22 @@ h4 {
 
   .partners .swiper-container {
     padding-bottom: 80px;
+  }
+
+  .contact-page-nav {
+    background-color: #fff !important;
+  }
+
+  .contact-page-info {
+    padding-top: 28px;
+  }
+
+  .contact-page-request {
+    padding-top: 35px;
+  }
+
+  .contact-page-request h2 {
+    margin-bottom: 20px;
   }
 }
 

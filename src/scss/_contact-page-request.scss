@@ -1,4 +1,12 @@
 .contact-page-request {
+  @include block_480 {
+    padding-top: 35px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
   .request-content {
     padding-top: 110px;
     padding-bottom: 110px;

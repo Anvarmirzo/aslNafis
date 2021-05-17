@@ -1,10 +1,18 @@
 .contact-page-nav {
-  background-color: rgba(68, 68, 68, 0.05);
+  background-color: rgba(68, 68, 68, 0.05) !important;
+
+  @include block_480 {
+    background-color: #fff !important;
+  }
 }
 
 .contact-page-info {
   padding-bottom: 40px;
   margin-bottom: -40px;
+
+  @include block_480 {
+    padding-top: 28px;
+  }
 
   .info {
     &__item {
@@ -21,7 +29,7 @@
         }
       }
 
-      @include block_575{
+      @include block_575 {
         margin-bottom: 20px;
       }
 
