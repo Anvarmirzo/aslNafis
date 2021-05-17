@@ -1,7 +1,9 @@
 .lifehack-main {
   .shops-form-title {
-    padding-left: 0;
-    padding-right: 0;
+    @include block_480 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   .swiper-slide {
@@ -11,11 +13,27 @@
       font-size: 24px;
       line-height: 1.22;
       color: #556270;
+
+      @include block_575 {
+        font-size: 18px;
+        margin-top: 10px;
+      }
     }
   }
 
   .why {
     padding-bottom: 0;
+    padding-top: 40px;
+
+    @include block_575 {
+      padding-top: 50px;
+    }
+
+    img {
+      width: 370px;
+      height: 372px;
+      // object-fit: cover;
+    }
   }
 
   .hide-lg {
@@ -29,6 +47,12 @@
 
     @include block_991 {
       display: inline-block;
+    }
+  }
+
+  h2 {
+    @include block_575 {
+      margin-bottom: 20px;
     }
   }
 }
@@ -116,5 +140,11 @@
     padding: 10px;
     background-color: transparent;
     border-width: 0;
+  }
+}
+
+.lifehack {
+  img {
+    box-shadow: 0px 4px 15px -5px #4DA9F5;
   }
 }

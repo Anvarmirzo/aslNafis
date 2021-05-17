@@ -82,6 +82,11 @@
         padding-bottom: 20px;
         margin-bottom: 19px;
       }
+
+      @include block_480 {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
   }
 }

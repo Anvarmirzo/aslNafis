@@ -166,6 +166,38 @@ $(document).ready(function () {
       }
     }
   });
+  /* Why Swiper */
+
+  var whyLifehackSwiper = new Swiper('.lifehack.why .swiper-container', {
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false
+    },
+    centerMode: true,
+    navigation: {
+      nextEl: '.why .why-arrow-right',
+      prevEl: '.why .why-arrow-left'
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      991: {
+        slidesPerView: 3
+      },
+      1200: {
+        slidesPerView: 3
+      }
+    }
+  });
   /* Partners Swiper */
 
   var partnerSwiper = new Swiper('.partners .swiper-container', {

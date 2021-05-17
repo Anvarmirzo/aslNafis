@@ -3308,11 +3308,6 @@ h4 {
   padding-right: 45px;
 }
 
-.lifehack-main .shops-form-title {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .lifehack-main .swiper-slide p {
   margin-top: 30px;
   font-weight: 600;
@@ -3323,6 +3318,12 @@ h4 {
 
 .lifehack-main .why {
   padding-bottom: 0;
+  padding-top: 40px;
+}
+
+.lifehack-main .why img {
+  width: 370px;
+  height: 372px;
 }
 
 .lifehack-main .show-lg {
@@ -3404,6 +3405,11 @@ h4 {
   padding: 10px;
   background-color: transparent;
   border-width: 0;
+}
+
+.lifehack img {
+  -webkit-box-shadow: 0px 4px 15px -5px #4DA9F5;
+  box-shadow: 0px 4px 15px -5px #4DA9F5;
 }
 
 .form.modal {
@@ -5302,6 +5308,19 @@ h4 {
     margin-bottom: 19px;
   }
 
+  .lifehack-main .swiper-slide p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .lifehack-main .why {
+    padding-top: 50px;
+  }
+
+  .lifehack-main h2 {
+    margin-bottom: 20px;
+  }
+
   .question.show-text .question-text {
     padding: 30px 25px;
   }
@@ -5430,6 +5449,16 @@ h4 {
 
   .wholesaler-desc {
     padding-bottom: 5px;
+  }
+
+  .shops-form-title {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .lifehack-main .shops-form-title {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
