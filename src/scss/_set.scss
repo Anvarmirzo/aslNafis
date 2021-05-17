@@ -1,4 +1,8 @@
 .set {
+  @include block_480 {
+    padding-top: 53px;
+  }
+
   .container {
     @include block_480 {
       padding-right: 0;
