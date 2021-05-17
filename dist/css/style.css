@@ -3190,6 +3190,34 @@ h4 {
   color: #556270;
 }
 
+.retail-why .text-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.retail-why .logo {
+  width: 150px;
+  height: 117px;
+  background-size: cover;
+  margin-right: 30px;
+}
+
+.retail-why .logo-title {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 1.22;
+  color: #556270;
+  text-transform: uppercase;
+}
+
 .where {
   padding-top: 60px;
   padding-bottom: 20px;
@@ -4838,6 +4866,25 @@ h4 {
 
   .retail-header .header__container {
     margin-top: 0;
+  }
+
+  .retail-why .text-center {
+    margin-bottom: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .retail-why .logo {
+    width: 110px;
+    height: 88px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .retail-why .logo-title {
+    font-size: 36px;
   }
 }
 
