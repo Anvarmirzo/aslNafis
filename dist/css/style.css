@@ -5346,6 +5346,14 @@ h4 {
     padding-top: 53px;
     padding-bottom: 28px;
   }
+
+  .partners {
+    padding-top: 80px;
+  }
+
+  .partners .swiper-container {
+    padding-bottom: 80px;
+  }
 }
 
 @media (max-width: 438px) {

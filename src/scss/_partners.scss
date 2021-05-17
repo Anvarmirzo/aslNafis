@@ -1,6 +1,14 @@
 .partners {
+  @include block_480 {
+    padding-top: 80px;
+  }
+
   .swiper-container {
     padding-bottom: 60px;
+
+    @include block_480 {
+      padding-bottom: 80px;
+    }
   }
 
   &-item {
