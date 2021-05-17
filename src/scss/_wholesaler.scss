@@ -1,5 +1,9 @@
 .wholesaler {
   &-page-main {
+    .header {
+      background-image: none;
+    }
+
     .header__container {
       padding-bottom: 0;
     }
@@ -60,6 +64,10 @@
 
     @include block_1199 {
       font-size: 29px;
+    }
+
+    @include block_480 {
+      padding-bottom: 5px;
     }
 
     &.download__text {

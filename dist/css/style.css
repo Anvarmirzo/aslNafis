@@ -727,6 +727,10 @@ section {
   overflow: hidden;
 }
 
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1400,10 +1404,6 @@ section {
   background-image: none;
 }
 
-.header-content .row--margin {
-  margin-top: -18%;
-}
-
 .header-content .row p {
   font-size: 18px;
   line-height: 1.22;
@@ -1494,6 +1494,10 @@ section {
   color: #fff;
   background-image: -o-linear-gradient(315deg, #74C0FC 0%, #339AF0 100%);
   background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+}
+
+.header-content--margin {
+  margin-top: -18%;
 }
 
 h2 {
@@ -3002,6 +3006,10 @@ h4 {
   opacity: 0.6;
 }
 
+.wholesaler-page-main .header {
+  background-image: none;
+}
+
 .wholesaler-page-main .header__container {
   padding-bottom: 0;
 }
@@ -4065,7 +4073,6 @@ h4 {
 
   .foreigner-page-services .our-services-item {
     margin-bottom: 25px;
-    background-color: #fff;
     position: relative;
     overflow: hidden;
   }
@@ -4167,7 +4174,7 @@ h4 {
     margin-bottom: 35px;
   }
 
-  .header-content .row--margin {
+  .header-content--margin {
     margin-top: 30px;
   }
 
@@ -5372,6 +5379,10 @@ h4 {
 
   .contact-page-request h2 {
     margin-bottom: 20px;
+  }
+
+  .wholesaler-desc {
+    padding-bottom: 5px;
   }
 }
 
