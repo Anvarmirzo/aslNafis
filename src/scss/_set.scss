@@ -1,4 +1,14 @@
 .set {
+  .container {
+    @include block_480 {
+      padding-right: 0;
+
+      .swiper-slide {
+        width: 260px;
+      }
+    }
+  }
+
   &-card {
     min-height: 295px;
     height: 100%;
@@ -11,6 +21,10 @@
 
     @include block_575 {
       min-height: 260px;
+    }
+
+    @include block_480 {
+      width: 260px;
     }
 
     @include custom-media(400px) {

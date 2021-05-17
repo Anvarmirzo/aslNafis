@@ -5281,6 +5281,18 @@ h4 {
     top: -90%;
   }
 
+  .set .container {
+    padding-right: 0;
+  }
+
+  .set .container .swiper-slide {
+    width: 260px;
+  }
+
+  .set-card {
+    width: 260px;
+  }
+
   .popular-card {
     margin-bottom: 15px;
   }
