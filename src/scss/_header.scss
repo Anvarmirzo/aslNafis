@@ -3,10 +3,29 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  position: relative;
-  overflow: hidden;
 
   @include block_767 {
+    background-image: none;
+  }
+
+  &__container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+
+    @include block_767 {
+      padding: 0 0 24px;
+    }
+  }
+
+  &-content {
+    position: relative;
+    overflow: hidden;
+
+    background-color: #E3F3FB;
+    padding: 42px 114px 37px;
+    margin-bottom: 24px;
+
     &::before {
       position: absolute;
       content: '';
@@ -33,134 +52,88 @@
       box-shadow: 0px 0px 20px 20px #3297ee;
       animation: resizing linear 3s infinite alternate;
     }
-  }
-
-  @include block_767 {
-    background-image: none;
-  }
-
-  &__container {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 40px;
-
-    @include block_767 {
-      padding: 0 0 24px;
-    }
-  }
-
-  &-content {
-    background-color: #E3F3FB;
-    padding: 42px 114px 37px;
-    margin-bottom: 24px;
-
-    @media (min-width:768px) {
-      position: relative;
-      overflow: hidden;
-
-      &::before {
-        position: absolute;
-        content: '';
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        background-color: #3297EE;
-        left: 10%;
-        bottom: -20px;
-        box-shadow: 0px 0px 20px 20px #3297ee;
-        animation: moving linear 10s infinite;
-      }
-
-      &::after {
-        right: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        position: absolute;
-        content: '';
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: #3297EE;
-        box-shadow: 0px 0px 20px 20px #3297ee;
-        animation: resizing linear 3s infinite alternate;
-      }
-    }
-
-
 
     @include custom-media(1332px) {
-      padding: 37px;
+      padding: 0 37px 37px;
     }
 
     @include block_575 {
-      padding: 15px;
+      padding: 0 15px 15px;
     }
 
 
+    .row {
+      h2 {
+        background-image: none;
 
-    h2 {
-      background-image: none;
+        @include custom-media(1505px) {
+          font-size: 39px;
+        }
 
-      @include custom-media(1505px) {
-        font-size: 39px;
+        @include custom-media(1159px) {
+          font-size: 31px;
+        }
+
+        @include block_991 {
+          margin-bottom: 35px;
+        }
+
+        @include block_575 {
+          font-size: 24px;
+        }
       }
 
-      @include custom-media(1159px) {
-        font-size: 31px;
+      &--margin {
+        margin-top: -18%;
+
+        @include block_991 {
+          margin-top: 30px;
+        }
       }
 
-      @include block_991 {
-        margin-bottom: 35px;
+      p {
+        font-size: 18px;
+        line-height: 1.22;
+        color: #1864AB;
+        margin-bottom: 20px;
+
+        @include block_575 {
+          font-size: 14px;
+          margin-bottom: 30px;
+        }
       }
 
-      @include block_575 {
-        font-size: 24px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #000000;
+        font-size: 18px;
+        line-height: 1.22;
+        width: max-content;
+        border: 4px solid #4DA9F5;
+        border-radius: 5px;
+        padding: 16px 39px;
+        margin-bottom: 26px;
+
+        @include block_575 {
+          font-size: 14px;
+          padding: 13px 38px;
+          border-width: 2px;
+        }
+
+        &:hover {
+          color: #fff;
+          background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
+        }
       }
     }
+  }
 
-    &--margin {
-      margin-top: -18%;
-
-      @include block_991 {
-        margin-top: 30px;
-      }
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.22;
-      color: #1864AB;
-      margin-bottom: 20px;
-
-      @include block_575 {
-        font-size: 14px;
-      }
-    }
-
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      color: #000000;
-      font-size: 18px;
-      line-height: 1.22;
-      width: max-content;
-      border: 4px solid #4DA9F5;
-      border-radius: 5px;
-      padding: 16px 39px;
-      margin-bottom: 26px;
-
-      @include block_575 {
-        font-size: 14px;
-        padding: 13px 37px;
-        border-width: 2px;
-      }
-
-      &:hover {
-        color: #fff;
-        background-image: linear-gradient(135deg, #74C0FC 0%, #339AF0 100%);
-      }
+  .swiper-container {
+    @include block_575 {
+      padding-left: 15px;
     }
   }
 
@@ -168,13 +141,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 40px 30px;
+    padding: 30px 40px;
     background-image: url(../img/products/titan.png);
     background-color: #f6f6f6;
     background-repeat: no-repeat;
     background-position: right bottom;
     height: 100%;
     box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.1);
+
+    @include block_480 {
+      max-width: 261px;
+      min-height: 200px;
+      display: block;
+    }
 
     &.second {
       background-image: url(../img/products/gold.png);
@@ -192,7 +171,7 @@
       margin-bottom: 56px;
 
       @include block_575 {
-        margin-bottom: 30px;
+        margin-bottom: 38px;
       }
     }
 
@@ -201,7 +180,7 @@
       font-weight: 600;
       font-size: 14px;
       line-height: 1.21;
-      border: 4px solid #4DA9F5;
+      border: 1px solid #4DA9F5;
       padding: 9px 30px;
       border-radius: 5px;
       background-color: rgba(255, 255, 255, 0.9);

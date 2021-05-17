@@ -26,9 +26,11 @@ let complectSwiper = new Swiper('.swiper-container.complect', {
   breakpoints: {
     320: {
       slidesPerView: 1.15,
+      spaceBetween: 19,
     },
     576: {
       slidesPerView: 1.15,
+      spaceBetween: 19,
     },
     768: {
       slidesPerView: 2.15,

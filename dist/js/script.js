@@ -11,11 +11,12 @@ $(document).ready(function () {
     });
   }
 
-  var nav = document.querySelector('.links-container');
+  var nav = document.querySelector('.mobile.links-container');
   var burger = document.querySelector('.nav-toggle');
   var openDropdown = document.querySelector('.open-dropdown');
   var dropdownMenu = document.querySelector('.dropdown-menu');
   var navLayer = document.querySelector('.nav-layer');
+  console.log(burger);
   burger.addEventListener('click', function (e) {
     nav.classList.toggle('active');
     document.body.classList.toggle('overflow-hidden');
@@ -75,10 +76,12 @@ $(document).ready(function () {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.15
+        slidesPerView: 1.15,
+        spaceBetween: 19
       },
       576: {
-        slidesPerView: 1.15
+        slidesPerView: 1.15,
+        spaceBetween: 19
       },
       768: {
         slidesPerView: 2.15
