@@ -5302,6 +5302,11 @@ h4 {
     padding: 40px 25px;
   }
 
+  .popular {
+    padding-top: 54px;
+    padding-bottom: 61px;
+  }
+
   .popular-card {
     margin-bottom: 15px;
   }
@@ -5319,6 +5324,10 @@ h4 {
   .popular-card-img img {
     max-width: 97px;
     max-height: 97px;
+  }
+
+  .popular .to-catalog {
+    padding: 12px 38px;
   }
 }
 

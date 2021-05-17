@@ -11,6 +11,11 @@
     }
   }
 
+  @include block_480 {
+    padding-top: 54px;
+    padding-bottom: 61px;
+  }
+
   &-card {
     margin-bottom: 30px;
     text-align: center;
@@ -71,6 +76,10 @@
     @include block_575 {
       font-size: 14px;
       margin-top: 30px;
+    }
+
+    @include block_480 {
+      padding: 12px 38px;
     }
   }
 }
