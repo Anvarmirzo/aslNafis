@@ -1823,7 +1823,7 @@ h4 {
   background-color: #A5D8FF;
   -webkit-box-shadow: 4px 4px 10px 7px rgba(0, 0, 0, 0.15);
   box-shadow: 4px 4px 10px 7px rgba(0, 0, 0, 0.15);
-  padding: 25px;
+  padding: 25px 30px;
   text-align: center;
 }
 
@@ -5031,6 +5031,13 @@ h4 {
   .table-nav a {
     font-size: 14px;
     min-height: 55px;
+  }
+
+  .table-nav a {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 240px;
+    padding: 21px 10px;
   }
 
   .why-item__img {
