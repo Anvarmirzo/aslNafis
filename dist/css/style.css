@@ -5058,6 +5058,7 @@ h4 {
 
   .video a {
     margin-bottom: 30px;
+    color: #000;
   }
 
   .footer-phone {
@@ -5292,6 +5293,10 @@ h4 {
     top: -90%;
   }
 
+  .why .slider-navigation {
+    top: 25%;
+  }
+
   .set {
     padding-top: 53px;
   }
@@ -5335,6 +5340,11 @@ h4 {
 
   .popular .to-catalog {
     padding: 12px 38px;
+  }
+
+  .why {
+    padding-top: 53px;
+    padding-bottom: 28px;
   }
 }
 

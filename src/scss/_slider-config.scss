@@ -99,6 +99,10 @@
     align-items: center;
     z-index: 1;
 
+    @include block_480 {
+      top: 25%;
+    }
+
     button {
       width: 25px;
       height: 33px;

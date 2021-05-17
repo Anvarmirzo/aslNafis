@@ -156,7 +156,7 @@ $(document).ready(function () {
         slidesPerView: 3
       },
       1200: {
-        slidesPerView: 3
+        slidesPerView: 4
       }
     }
   });
