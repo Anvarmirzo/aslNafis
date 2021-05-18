@@ -5518,6 +5518,13 @@ h4 {
     width: 260px;
     padding: 40px 25px;
   }
+
+  .contact-page-request .request__item {
+    max-width: 240px;
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 144px;
+  }
 }
 
 @media (max-width: 320px) {
