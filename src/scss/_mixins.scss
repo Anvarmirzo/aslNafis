@@ -88,6 +88,12 @@
     }
 }
 
+@mixin block_320 {
+    @media (max-width: 320.98px) {
+        @content;
+    }
+}
+
 @mixin custom-media($size) {
     @media (max-width: $size) {
         @content;

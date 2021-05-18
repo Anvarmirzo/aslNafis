@@ -5363,12 +5363,6 @@ h4 {
 }
 
 @media (max-width: 480.98px) {
-  .header-card {
-    max-width: 261px;
-    min-height: 200px;
-    display: block;
-  }
-
   .header-content .slider-controls {
     top: -90%;
   }
@@ -5387,11 +5381,6 @@ h4 {
 
   .set .container .swiper-slide {
     width: 260px;
-  }
-
-  .set-card {
-    width: 260px;
-    padding: 40px 25px;
   }
 
   .popular {
@@ -5515,6 +5504,19 @@ h4 {
 @media (max-width: 325px) {
   .foreigner-page-services {
     padding-top: 282px;
+  }
+}
+
+@media (max-width: 320.98px) {
+  .header-card {
+    max-width: 261px;
+    min-height: 200px;
+    display: block;
+  }
+
+  .set-card {
+    width: 260px;
+    padding: 40px 25px;
   }
 }
 
