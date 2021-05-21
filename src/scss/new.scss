@@ -1,0 +1,59 @@
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-menu>li:first-child a {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #556270;
+  margin-bottom: 14px;
+}
+
+.footer-menu>li a {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #556270;
+}
+
+.footer-menu .dflt>li:first-child a {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* проще очистить существующие стили... */
+.footer-logo {
+  margin-bottom: 9px;
+  margin-top: -16px;
+}
+
+@media (max-width:992px) {
+  .footer-phone {
+    margin-bottom: 0;
+  }
+
+  .footer {
+    padding-bottom: 30px !important;
+  }
+
+  .footer-menu {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:768px) {
+  .footer__row {
+    flex-direction: column;
+  }
+
+  .footer-menu {
+    margin-bottom: 14px;
+  }
+}
